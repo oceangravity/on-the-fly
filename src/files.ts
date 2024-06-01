@@ -46,16 +46,6 @@ export const files = {
             "file": {
               "contents": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\", \"unifiedjs.vscode-mdx\"],\n  \"unwantedRecommendations\": []\n}\n"
             }
-          },
-          "qwik-city.code-snippets": {
-            "file": {
-              "contents": "{\n  \"onRequest\": {\n    \"scope\": \"javascriptreact,typescriptreact\",\n    \"prefix\": \"qonRequest\",\n    \"description\": \"onRequest function for a route index\",\n    \"body\": [\n      \"export const onRequest: RequestHandler = (request) => {\",\n      \"  $0\",\n      \"};\"\n    ]\n  },\n  \"loader$\": {\n    \"scope\": \"javascriptreact,typescriptreact\",\n    \"prefix\": \"qloader$\",\n    \"description\": \"loader$()\",\n    \"body\": [\n\t\t\t\"export const $1 = routeLoader$(() => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\"\n    ]\n  },\n  \"action$\": {\n    \"scope\": \"javascriptreact,typescriptreact\",\n    \"prefix\": \"qaction$\",\n    \"description\": \"action$()\",\n    \"body\": [\n\t\t\t\"export const $1 = routeAction$((data) => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\"\n    ]\n  },\n  \"Full Page\": {\n    \"scope\": \"javascriptreact,typescriptreact\",\n    \"prefix\": \"qpage\",\n    \"description\": \"Simple page component\",\n    \"body\": [\n      \"import { component$ } from '@builder.io/qwik';\",\n      \"\",\n\t\t\t\"export default component$(() => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\"\n    ]\n  }\n}\n"
-            }
-          },
-          "qwik.code-snippets": {
-            "file": {
-              "contents": "{\n\t\"Qwik component (simple)\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"qcomponent$\",\n\t\t\"description\": \"Simple Qwik component\",\n\t\t\"body\": [\n\t\t\t\"export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = component$(() => {\",\n\t\t\t\"  return <${2:div}>$4</$2>\",\n\t\t\t\"});\"\n\t\t]\n\t},\n\t\"Qwik component (props)\": {\n\t\t\"scope\": \"typescriptreact\",\n\t\t\"prefix\": \"qcomponent$ + props\",\n\t\t\"description\": \"Qwik component w/ props\",\n\t\t\"body\": [\n\t\t\t\"export interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {\",\n\t\t\t\"  $2\",\n\t\t\t\"}\",\n\t\t\t\"\",\n\t\t\t\"export const $1 = component$<$1Props>((props) => {\",\n\t\t\t\"  const ${2:count} = useSignal(0);\",\n\t\t\t\"  return (\",\n\t\t\t\"    <${3:div} on${4:Click}$={(ev) => {$5}}>\",\n\t\t\t\"      $6\",\n\t\t\t\"    </${3}>\",\n\t\t\t\"  );\",\n\t\t\t\"});\"\n\t\t]\n\t},\n\t\"Qwik signal\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"quseSignal\",\n\t\t\"description\": \"useSignal() declaration\",\n\t\t\"body\": [\n\t\t\t\"const ${1:foo} = useSignal($2);\",\n\t\t\t\"$0\"\n\t\t]\n\t},\n\t\"Qwik store\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"quseStore\",\n\t\t\"description\": \"useStore() declaration\",\n\t\t\"body\": [\n\t\t\t\"const ${1:state} = useStore({\",\n\t\t\t\"  $2\",\n\t\t\t\"});\",\n\t\t\t\"$0\"\n\t\t]\n\t},\n\t\"$ hook\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"q$\",\n\t\t\"description\": \"$() function hook\",\n\t\t\"body\": [\n\t\t\t\"$(() => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\",\n\t\t\t\"\"\n\t\t]\n\t},\n\t\"useVisibleTask\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"quseVisibleTask\",\n\t\t\"description\": \"useVisibleTask$() function hook\",\n\t\t\"body\": [\n\t\t\t\"useVisibleTask$(({ track }) => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\",\n\t\t\t\"\"\n\t\t]\n\t},\n\t\"useTask\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"quseTask$\",\n\t\t\"description\": \"useTask$() function hook\",\n\t\t\"body\": [\n\t\t\t\"useTask$(({ track }) => {\",\n\t\t\t\"  track(() => $1);\",\n\t\t\t\"  $0\",\n\t\t\t\"});\",\n\t\t\t\"\"\n\t\t]\n\t},\n\t\"useResource\": {\n\t\t\"scope\": \"javascriptreact,typescriptreact\",\n\t\t\"prefix\": \"quseResource$\",\n\t\t\"description\": \"useResource$() declaration\",\n\t\t\"body\": [\n\t\t\t\"const $1 = useResource$(({ track, cleanup }) => {\",\n\t\t\t\"  $0\",\n\t\t\t\"});\",\n\t\t\t\"\"\n\t\t]\n\t}\n}"
-            }
           }
         }
       },
@@ -280,12 +270,226 @@ export const files = {
       },
       "tsconfig.json": {
         "file": {
-          "contents": "{\n  \"compilerOptions\": {\n    \"allowJs\": true,\n    \"target\": \"ES2017\",\n    \"module\": \"ES2020\",\n    \"lib\": [\"es2020\", \"DOM\", \"WebWorker\", \"DOM.Iterable\"],\n    \"jsx\": \"react-jsx\",\n    \"jsxImportSource\": \"@builder.io/qwik\",\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"resolveJsonModule\": true,\n    \"moduleResolution\": \"node\",\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"incremental\": true,\n    \"noEmitOnError\": false,\n    \"isolatedModules\": true,\n    \"outDir\": \"tmp\",\n    \"noEmit\": true,\n    \"types\": [\"node\", \"vite/client\"],\n    \"paths\": {\n      \"~/*\": [\"./src/*\"]\n    }\n  },\n  \"files\": [\"./.eslintrc.cjs\"],\n  \"include\": [\"src\"],\n}\n"
+          "contents": "{\n  \"compilerOptions\": {\n    \"allowJs\": true,\n    \"target\": \"ES2017\",\n    \"module\": \"ES2020\",\n    \"lib\": [\"es2020\", \"DOM\", \"WebWorker\", \"DOM.Iterable\"],\n    \"jsx\": \"react-jsx\",\n    \"jsxImportSource\": \"@builder.io/qwik\",\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"resolveJsonModule\": true,\n    \"moduleResolution\": \"node\",\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"incremental\": true,\n    \"isolatedModules\": true,\n    \"outDir\": \"tmp\",\n    \"noEmit\": true,\n    \"types\": [\"node\", \"vite/client\"],\n    \"paths\": {\n      \"~/*\": [\"./src/*\"]\n    }\n  },\n  \"files\": [\"./.eslintrc.cjs\"],\n  \"include\": [\"src\"]\n}\n"
         }
       },
       "vite.config.ts": {
         "file": {
           "contents": "import { defineConfig } from 'vite';\nimport { qwikVite } from '@builder.io/qwik/optimizer';\nimport { qwikCity } from '@builder.io/qwik-city/vite';\nimport tsconfigPaths from 'vite-tsconfig-paths';\n\nexport default defineConfig(() => {\n  return {\n    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],\n    preview: {\n      headers: {\n        'Cache-Control': 'public, max-age=600',\n      },\n    },\n  };\n});\n"
+        }
+      }
+    }
+  },
+  "vue-project": {
+    "directory": {
+      ".eslintrc.cjs": {
+        "file": {
+          "contents": "/* eslint-env node */\nrequire('@rushstack/eslint-patch/modern-module-resolution')\n\nmodule.exports = {\n  root: true,\n  'extends': [\n    'plugin:vue/vue3-essential',\n    'eslint:recommended',\n    '@vue/eslint-config-typescript',\n    '@vue/eslint-config-prettier/skip-formatting'\n  ],\n  parserOptions: {\n    ecmaVersion: 'latest'\n  }\n}\n"
+        }
+      },
+      ".gitignore": {
+        "file": {
+          "contents": "# Logs\nlogs\n*.log\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\npnpm-debug.log*\nlerna-debug.log*\n\nnode_modules\n.DS_Store\ndist\ndist-ssr\ncoverage\n*.local\n\n/cypress/videos/\n/cypress/screenshots/\n\n# Editor directories and files\n.vscode/*\n!.vscode/extensions.json\n.idea\n*.suo\n*.ntvs*\n*.njsproj\n*.sln\n*.sw?\n\n*.tsbuildinfo\n"
+        }
+      },
+      ".prettierrc.json": {
+        "file": {
+          "contents": "{\n  \"$schema\": \"https://json.schemastore.org/prettierrc\",\n  \"semi\": false,\n  \"tabWidth\": 2,\n  \"singleQuote\": true,\n  \"printWidth\": 100,\n  \"trailingComma\": \"none\"\n}"
+        }
+      },
+      ".vscode": {
+        "directory": {
+          "extensions.json": {
+            "file": {
+              "contents": "{\n  \"recommendations\": [\n    \"Vue.volar\",\n    \"dbaeumer.vscode-eslint\",\n    \"esbenp.prettier-vscode\"\n  ]\n}\n"
+            }
+          },
+          "settings.json": {
+            "file": {
+              "contents": "{\n  \"editor.codeActionsOnSave\": {\n    \"source.fixAll\": \"explicit\"\n  },\n  \"editor.formatOnSave\": true,\n  \"editor.defaultFormatter\": \"esbenp.prettier-vscode\"\n}\n"
+            }
+          }
+        }
+      },
+      "README.md": {
+        "file": {
+          "contents": "# vue-project\n\nThis template should help get you started developing with Vue 3 in Vite.\n\n## Recommended IDE Setup\n\n[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).\n\n## Type Support for `.vue` Imports in TS\n\nTypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.\n\n## Customize configuration\n\nSee [Vite Configuration Reference](https://vitejs.dev/config/).\n\n## Project Setup\n\n```sh\npnpm install\n```\n\n### Compile and Hot-Reload for Development\n\n```sh\npnpm dev\n```\n\n### Type-Check, Compile and Minify for Production\n\n```sh\npnpm build\n```\n\n### Run Unit Tests with [Vitest](https://vitest.dev/)\n\n```sh\npnpm test:unit\n```\n\n### Lint with [ESLint](https://eslint.org/)\n\n```sh\npnpm lint\n```\n"
+        }
+      },
+      "env.d.ts": {
+        "file": {
+          "contents": "/// <reference types=\"vite/client\" />\n"
+        }
+      },
+      "index.html": {
+        "file": {
+          "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/favicon.ico\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Vite App</title>\n  </head>\n  <body>\n    <div id=\"app\"></div>\n    <script type=\"module\" src=\"/src/main.ts\"></script>\n  </body>\n</html>\n"
+        }
+      },
+      "package.json": {
+        "file": {
+          "contents": "{\n  \"name\": \"vue-project\",\n  \"version\": \"0.0.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\": \"vite\",\n    \"build\": \"run-p type-check \\\"build-only {@}\\\" --\",\n    \"preview\": \"vite preview\",\n    \"test:unit\": \"vitest\",\n    \"build-only\": \"vite build\",\n    \"type-check\": \"vue-tsc --build --force\",\n    \"lint\": \"eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore\",\n    \"format\": \"prettier --write src/\"\n  },\n  \"dependencies\": {\n    \"pinia\": \"^2.1.7\",\n    \"vue\": \"^3.4.21\",\n    \"vue-router\": \"^4.3.0\"\n  },\n  \"devDependencies\": {\n    \"@rushstack/eslint-patch\": \"^1.8.0\",\n    \"@tsconfig/node20\": \"^20.1.4\",\n    \"@types/jsdom\": \"^21.1.6\",\n    \"@types/node\": \"^20.12.5\",\n    \"@vitejs/plugin-vue\": \"^5.0.4\",\n    \"@vitejs/plugin-vue-jsx\": \"^3.1.0\",\n    \"@vue/eslint-config-prettier\": \"^9.0.0\",\n    \"@vue/eslint-config-typescript\": \"^13.0.0\",\n    \"@vue/test-utils\": \"^2.4.5\",\n    \"@vue/tsconfig\": \"^0.5.1\",\n    \"eslint\": \"^8.57.0\",\n    \"eslint-plugin-vue\": \"^9.23.0\",\n    \"jsdom\": \"^24.0.0\",\n    \"npm-run-all2\": \"^6.1.2\",\n    \"prettier\": \"^3.2.5\",\n    \"typescript\": \"~5.4.0\",\n    \"vite\": \"^5.2.8\",\n    \"vitest\": \"^1.4.0\",\n    \"vue-tsc\": \"^2.0.11\"\n  }\n}\n"
+        }
+      },
+      "public": {
+        "directory": {
+          "favicon.ico": {
+            "file": {
+              "contents": "\u0000\u0000\u0001\u0000\u0001\u0000  \u0000\u0000\u0001\u0000 \u0000�\u0010\u0000\u0000\u0016\u0000\u0000\u0000(\u0000\u0000\u0000 \u0000\u0000\u0000@\u0000\u0000\u0000\u0001\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A3��A3��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u000b��A���A���A\u000b��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��AZ��A���A���AZ��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u001a��AɃ�A���A���AɃ�A\u001a��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��Az��A���A���A���A���Az��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A.��A߃�A���A���A���A���A߃�A.��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0005��A���A���A���A���A���A���A���A���A\u0005��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��AH��A���A���A���A���A���A���A���A���AH��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0010��A���A���A���A���A���A���A���A���A���A���A\u0010��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��Af��A���A���A���A���A���A���A���A���A���A���Af��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A ��A҃�A���A���A���A���A���A���A���A���A���A���A҃�A ��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0001��A���A���A���A���A���A�|�?�|�?���A���A���A���A���A���A���A\u0001��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A7��A惸A���A���A���A���A�jl9�jl9���A���A���A���A���A���A惸A7��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\t��A���A���A���A���A���A�w�=�_L5�_L5�w�=���A���A���A���A���A���A���A\t��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��AR��A�A���A���A���A���@�fa8�^H5�^H5�fa8���@���A���A���A���A���A�AR��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0015��A�A���A���A���A���A�r�<�^I5�^I5�^I5�^I5�r�<���A���A���A���A���A���A�A\u0015��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��Aq��A���A���A���A���A�}�?�cW7�^H5�^I5�^I5�^H5�cW7�}�?���A���A���A���A���A���Aq��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A(��Aڃ�A���A���A���A���A�mv:�^H5�^I5�^I5�^I5�^I5�^H5�mv:���A���A���A���A���A���Aڃ�A(��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0003��A���A���A���A���A���A�y�>�`P6�^H5�^I5�^I5�^I5�^I5�^H5�`P6�y�>���A���A���A���A���A���A���A\u0003��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A@��A샸A���A���A���A���@�ii9�]G5�^I5�^I5�^I5�^I5�^I5�^I5�]G5�ii9���@���A���A���A���A���A샸A@��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\r��A���A���A���A���A���A�u�=�_K5�^I5�^I5�^I5�^I5�^I5�^I5�^I5�^I5�_K5�u�=���A���A���A���A���A���A���A\r��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A]��A���A���A���A���A��@�e]7�^H5�^I5�^I5�^I5�^J5�^J5�^I5�^I5�^I5�^H5�e]7��@���A���A���A���A���A���A]��A\u0000��A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u001b��Ã�A���A���A���A���A�p;�^I5�^I5�^I5�^I5�^I5�_L5n_L5n^I5�^I5�^I5�^I5�^I5�p;���A���A���A���A���A���Ã�A\u001b��A\u0000\u0000\u0000\u0000\u0000��A\u0000��A\u0000��A}��A���A���A���A���A�|�?�bT6�^H5�^I5�^I5�^I5�_J5�aP6\u0013aP6\u0013_J5�^I5�^I5�^I5�^H5�bT6�|�?���A���A���A���A���A���A}��A\u0000��A\u0000��A\u0000��A/��AჸA���A���A���A���A�lq9�^H5�^I5�^I5�^I5�^I5�_L5P^H5\u0000^H5\u0000_L5P^I5�^I5�^I5�^I5�^H5�lq9���A���A���A���A���A���AჸA/��A\u0000��A\u0007��A���A���A���A���A���A�x�=�`N6�^I5�^I5�^I5�^I5�_K5�bT7\baQ6\u0000aQ6\u0000bT7\b_K5�^I5�^I5�^I5�^I5�`N6�x�=���A���A���A���A���A���A���A\u0007��AW��A���A���A���A���A���@�gd8�^H5�^I5�^I5�^I5�^J5�`M65_K5\u0000jf9\u0000jf9\u0000_K5\u0000`M65^J5�^I5�^I5�^I5�^H5�gd8���@���A���A���A���A���A���AW��A���Aȃ�Aƃ�Aƃ�AƄ�A�v�=�_K5�^I5�^I5�^I5�^I5�_K5uha9\u0002bS7\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000bS7\u0000ha9\u0002_K5u^I5�^I5�^I5�^I5�_K5�v�=Ƅ�Aƃ�Aƃ�Aƃ�Aƃ�Aȃ�A���A\u000e��A\r��A\r��A\r��A\r��A\rlr:\r\\D4\r^I5\r^I5\r^I5\r^I5\r`M6\u0005^H5\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000^H5\u0000`M6\u0005^I5\r^I5\r^I5\r^I5\r\\D4\rlr9\r��A\r��A\r��A\r��A\r��A\r��A\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�������������?���?���\u001f���\u001f���\u000f���\u0007���\u0007���\u0003���\u0003���\u0001��\u0000\u0000��\u0000\u0000��\u0000\u0000�\u0000\u0000�\u0000\u0000?�\u0000\u0000?�\u0000\u0000\u001f�\u0000\u0000\u000f�\u0000\u0000\u000f�\u0000\u0000\u0007�\u0000\u0000\u0007�\u0000\u0000\u0003�\u0000\u0000\u0003�\u0001�\u0001\u0000\u0001�\u0000\u0000\u0003�\u0000\u0000\u0003�\u0000\u0000\u0007�\u0000����"
+            }
+          }
+        }
+      },
+      "src": {
+        "directory": {
+          "App.vue": {
+            "file": {
+              "contents": "<script setup lang=\"ts\">\nimport { RouterLink, RouterView } from 'vue-router'\nimport HelloWorld from './components/HelloWorld.vue'\n</script>\n\n<template>\n  <header>\n    <img alt=\"Vue logo\" class=\"logo\" src=\"@/assets/logo.svg\" width=\"125\" height=\"125\" />\n\n    <div class=\"wrapper\">\n      <HelloWorld msg=\"You did it!\" />\n\n      <nav>\n        <RouterLink to=\"/\">Home</RouterLink>\n        <RouterLink to=\"/about\">About</RouterLink>\n      </nav>\n    </div>\n  </header>\n\n  <RouterView />\n</template>\n\n<style scoped>\nheader {\n  line-height: 1.5;\n  max-height: 100vh;\n}\n\n.logo {\n  display: block;\n  margin: 0 auto 2rem;\n}\n\nnav {\n  width: 100%;\n  font-size: 12px;\n  text-align: center;\n  margin-top: 2rem;\n}\n\nnav a.router-link-exact-active {\n  color: var(--color-text);\n}\n\nnav a.router-link-exact-active:hover {\n  background-color: transparent;\n}\n\nnav a {\n  display: inline-block;\n  padding: 0 1rem;\n  border-left: 1px solid var(--color-border);\n}\n\nnav a:first-of-type {\n  border: 0;\n}\n\n@media (min-width: 1024px) {\n  header {\n    display: flex;\n    place-items: center;\n    padding-right: calc(var(--section-gap) / 2);\n  }\n\n  .logo {\n    margin: 0 2rem 0 0;\n  }\n\n  header .wrapper {\n    display: flex;\n    place-items: flex-start;\n    flex-wrap: wrap;\n  }\n\n  nav {\n    text-align: left;\n    margin-left: -1rem;\n    font-size: 1rem;\n\n    padding: 1rem 0;\n    margin-top: 1rem;\n  }\n}\n</style>\n"
+            }
+          },
+          "assets": {
+            "directory": {
+              "base.css": {
+                "file": {
+                  "contents": "/* color palette from <https://github.com/vuejs/theme> */\n:root {\n  --vt-c-white: #ffffff;\n  --vt-c-white-soft: #f8f8f8;\n  --vt-c-white-mute: #f2f2f2;\n\n  --vt-c-black: #181818;\n  --vt-c-black-soft: #222222;\n  --vt-c-black-mute: #282828;\n\n  --vt-c-indigo: #2c3e50;\n\n  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);\n  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);\n  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);\n  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);\n\n  --vt-c-text-light-1: var(--vt-c-indigo);\n  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);\n  --vt-c-text-dark-1: var(--vt-c-white);\n  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);\n}\n\n/* semantic color variables for this project */\n:root {\n  --color-background: var(--vt-c-white);\n  --color-background-soft: var(--vt-c-white-soft);\n  --color-background-mute: var(--vt-c-white-mute);\n\n  --color-border: var(--vt-c-divider-light-2);\n  --color-border-hover: var(--vt-c-divider-light-1);\n\n  --color-heading: var(--vt-c-text-light-1);\n  --color-text: var(--vt-c-text-light-1);\n\n  --section-gap: 160px;\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --color-background: var(--vt-c-black);\n    --color-background-soft: var(--vt-c-black-soft);\n    --color-background-mute: var(--vt-c-black-mute);\n\n    --color-border: var(--vt-c-divider-dark-2);\n    --color-border-hover: var(--vt-c-divider-dark-1);\n\n    --color-heading: var(--vt-c-text-dark-1);\n    --color-text: var(--vt-c-text-dark-2);\n  }\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  font-weight: normal;\n}\n\nbody {\n  min-height: 100vh;\n  color: var(--color-text);\n  background: var(--color-background);\n  transition:\n    color 0.5s,\n    background-color 0.5s;\n  line-height: 1.6;\n  font-family:\n    Inter,\n    -apple-system,\n    BlinkMacSystemFont,\n    'Segoe UI',\n    Roboto,\n    Oxygen,\n    Ubuntu,\n    Cantarell,\n    'Fira Sans',\n    'Droid Sans',\n    'Helvetica Neue',\n    sans-serif;\n  font-size: 15px;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"
+                }
+              },
+              "logo.svg": {
+                "file": {
+                  "contents": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 261.76 226.69\"><path d=\"M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z\" fill=\"#41b883\"/><path d=\"M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z\" fill=\"#34495e\"/></svg>\n"
+                }
+              },
+              "main.css": {
+                "file": {
+                  "contents": "@import './base.css';\n\n#app {\n  max-width: 1280px;\n  margin: 0 auto;\n  padding: 2rem;\n  font-weight: normal;\n}\n\na,\n.green {\n  text-decoration: none;\n  color: hsla(160, 100%, 37%, 1);\n  transition: 0.4s;\n  padding: 3px;\n}\n\n@media (hover: hover) {\n  a:hover {\n    background-color: hsla(160, 100%, 37%, 0.2);\n  }\n}\n\n@media (min-width: 1024px) {\n  body {\n    display: flex;\n    place-items: center;\n  }\n\n  #app {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    padding: 0 2rem;\n  }\n}\n"
+                }
+              }
+            }
+          },
+          "components": {
+            "directory": {
+              "HelloWorld.vue": {
+                "file": {
+                  "contents": "<script setup lang=\"ts\">\ndefineProps<{\n  msg: string\n}>()\n</script>\n\n<template>\n  <div class=\"greetings\">\n    <h1 class=\"green\">{{ msg }}</h1>\n    <h3>\n      You’ve successfully created a project with\n      <a href=\"https://vitejs.dev/\" target=\"_blank\" rel=\"noopener\">Vite</a> +\n      <a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener\">Vue 3</a>. What's next?\n    </h3>\n  </div>\n</template>\n\n<style scoped>\nh1 {\n  font-weight: 500;\n  font-size: 2.6rem;\n  position: relative;\n  top: -10px;\n}\n\nh3 {\n  font-size: 1.2rem;\n}\n\n.greetings h1,\n.greetings h3 {\n  text-align: center;\n}\n\n@media (min-width: 1024px) {\n  .greetings h1,\n  .greetings h3 {\n    text-align: left;\n  }\n}\n</style>\n"
+                }
+              },
+              "TheWelcome.vue": {
+                "file": {
+                  "contents": "<script setup lang=\"ts\">\nimport WelcomeItem from './WelcomeItem.vue'\nimport DocumentationIcon from './icons/IconDocumentation.vue'\nimport ToolingIcon from './icons/IconTooling.vue'\nimport EcosystemIcon from './icons/IconEcosystem.vue'\nimport CommunityIcon from './icons/IconCommunity.vue'\nimport SupportIcon from './icons/IconSupport.vue'\n</script>\n\n<template>\n  <WelcomeItem>\n    <template #icon>\n      <DocumentationIcon />\n    </template>\n    <template #heading>Documentation</template>\n\n    Vue’s\n    <a href=\"https://vuejs.org/\" target=\"_blank\" rel=\"noopener\">official documentation</a>\n    provides you with all information you need to get started.\n  </WelcomeItem>\n\n  <WelcomeItem>\n    <template #icon>\n      <ToolingIcon />\n    </template>\n    <template #heading>Tooling</template>\n\n    This project is served and bundled with\n    <a href=\"https://vitejs.dev/guide/features.html\" target=\"_blank\" rel=\"noopener\">Vite</a>. The\n    recommended IDE setup is\n    <a href=\"https://code.visualstudio.com/\" target=\"_blank\" rel=\"noopener\">VSCode</a> +\n    <a href=\"https://github.com/johnsoncodehk/volar\" target=\"_blank\" rel=\"noopener\">Volar</a>. If\n    you need to test your components and web pages, check out\n    <a href=\"https://www.cypress.io/\" target=\"_blank\" rel=\"noopener\">Cypress</a> and\n    <a href=\"https://on.cypress.io/component\" target=\"_blank\" rel=\"noopener\"\n      >Cypress Component Testing</a\n    >.\n\n    <br />\n\n    More instructions are available in <code>README.md</code>.\n  </WelcomeItem>\n\n  <WelcomeItem>\n    <template #icon>\n      <EcosystemIcon />\n    </template>\n    <template #heading>Ecosystem</template>\n\n    Get official tools and libraries for your project:\n    <a href=\"https://pinia.vuejs.org/\" target=\"_blank\" rel=\"noopener\">Pinia</a>,\n    <a href=\"https://router.vuejs.org/\" target=\"_blank\" rel=\"noopener\">Vue Router</a>,\n    <a href=\"https://test-utils.vuejs.org/\" target=\"_blank\" rel=\"noopener\">Vue Test Utils</a>, and\n    <a href=\"https://github.com/vuejs/devtools\" target=\"_blank\" rel=\"noopener\">Vue Dev Tools</a>. If\n    you need more resources, we suggest paying\n    <a href=\"https://github.com/vuejs/awesome-vue\" target=\"_blank\" rel=\"noopener\">Awesome Vue</a>\n    a visit.\n  </WelcomeItem>\n\n  <WelcomeItem>\n    <template #icon>\n      <CommunityIcon />\n    </template>\n    <template #heading>Community</template>\n\n    Got stuck? Ask your question on\n    <a href=\"https://chat.vuejs.org\" target=\"_blank\" rel=\"noopener\">Vue Land</a>, our official\n    Discord server, or\n    <a href=\"https://stackoverflow.com/questions/tagged/vue.js\" target=\"_blank\" rel=\"noopener\"\n      >StackOverflow</a\n    >. You should also subscribe to\n    <a href=\"https://news.vuejs.org\" target=\"_blank\" rel=\"noopener\">our mailing list</a> and follow\n    the official\n    <a href=\"https://twitter.com/vuejs\" target=\"_blank\" rel=\"noopener\">@vuejs</a>\n    twitter account for latest news in the Vue world.\n  </WelcomeItem>\n\n  <WelcomeItem>\n    <template #icon>\n      <SupportIcon />\n    </template>\n    <template #heading>Support Vue</template>\n\n    As an independent project, Vue relies on community backing for its sustainability. You can help\n    us by\n    <a href=\"https://vuejs.org/sponsor/\" target=\"_blank\" rel=\"noopener\">becoming a sponsor</a>.\n  </WelcomeItem>\n</template>\n"
+                }
+              },
+              "WelcomeItem.vue": {
+                "file": {
+                  "contents": "<template>\n  <div class=\"item\">\n    <i>\n      <slot name=\"icon\"></slot>\n    </i>\n    <div class=\"details\">\n      <h3>\n        <slot name=\"heading\"></slot>\n      </h3>\n      <slot></slot>\n    </div>\n  </div>\n</template>\n\n<style scoped>\n.item {\n  margin-top: 2rem;\n  display: flex;\n  position: relative;\n}\n\n.details {\n  flex: 1;\n  margin-left: 1rem;\n}\n\ni {\n  display: flex;\n  place-items: center;\n  place-content: center;\n  width: 32px;\n  height: 32px;\n\n  color: var(--color-text);\n}\n\nh3 {\n  font-size: 1.2rem;\n  font-weight: 500;\n  margin-bottom: 0.4rem;\n  color: var(--color-heading);\n}\n\n@media (min-width: 1024px) {\n  .item {\n    margin-top: 0;\n    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);\n  }\n\n  i {\n    top: calc(50% - 25px);\n    left: -26px;\n    position: absolute;\n    border: 1px solid var(--color-border);\n    background: var(--color-background);\n    border-radius: 8px;\n    width: 50px;\n    height: 50px;\n  }\n\n  .item:before {\n    content: ' ';\n    border-left: 1px solid var(--color-border);\n    position: absolute;\n    left: 0;\n    bottom: calc(50% + 25px);\n    height: calc(50% - 25px);\n  }\n\n  .item:after {\n    content: ' ';\n    border-left: 1px solid var(--color-border);\n    position: absolute;\n    left: 0;\n    top: calc(50% + 25px);\n    height: calc(50% - 25px);\n  }\n\n  .item:first-of-type:before {\n    display: none;\n  }\n\n  .item:last-of-type:after {\n    display: none;\n  }\n}\n</style>\n"
+                }
+              },
+              "__tests__": {
+                "directory": {
+                  "HelloWorld.spec.ts": {
+                    "file": {
+                      "contents": "import { describe, it, expect } from 'vitest'\n\nimport { mount } from '@vue/test-utils'\nimport HelloWorld from '../HelloWorld.vue'\n\ndescribe('HelloWorld', () => {\n  it('renders properly', () => {\n    const wrapper = mount(HelloWorld, { props: { msg: 'Hello Vitest' } })\n    expect(wrapper.text()).toContain('Hello Vitest')\n  })\n})\n"
+                    }
+                  }
+                }
+              },
+              "icons": {
+                "directory": {
+                  "IconCommunity.vue": {
+                    "file": {
+                      "contents": "<template>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\">\n    <path\n      d=\"M15 4a1 1 0 1 0 0 2V4zm0 11v-1a1 1 0 0 0-1 1h1zm0 4l-.707.707A1 1 0 0 0 16 19h-1zm-4-4l.707-.707A1 1 0 0 0 11 14v1zm-4.707-1.293a1 1 0 0 0-1.414 1.414l1.414-1.414zm-.707.707l-.707-.707.707.707zM9 11v-1a1 1 0 0 0-.707.293L9 11zm-4 0h1a1 1 0 0 0-1-1v1zm0 4H4a1 1 0 0 0 1.707.707L5 15zm10-9h2V4h-2v2zm2 0a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2zm1 1v6h2V7h-2zm0 6a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2zm-1 1h-2v2h2v-2zm-3 1v4h2v-4h-2zm1.707 3.293l-4-4-1.414 1.414 4 4 1.414-1.414zM11 14H7v2h4v-2zm-4 0c-.276 0-.525-.111-.707-.293l-1.414 1.414C5.42 15.663 6.172 16 7 16v-2zm-.707 1.121l3.414-3.414-1.414-1.414-3.414 3.414 1.414 1.414zM9 12h4v-2H9v2zm4 0a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1v2zm3-3V3h-2v6h2zm0-6a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1h2zm-3-3H3v2h10V0zM3 0a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1V0zM0 3v6h2V3H0zm0 6a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1H0zm3 3h2v-2H3v2zm1-1v4h2v-4H4zm1.707 4.707l.586-.586-1.414-1.414-.586.586 1.414 1.414z\"\n    />\n  </svg>\n</template>\n"
+                    }
+                  },
+                  "IconDocumentation.vue": {
+                    "file": {
+                      "contents": "<template>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"17\" fill=\"currentColor\">\n    <path\n      d=\"M11 2.253a1 1 0 1 0-2 0h2zm-2 13a1 1 0 1 0 2 0H9zm.447-12.167a1 1 0 1 0 1.107-1.666L9.447 3.086zM1 2.253L.447 1.42A1 1 0 0 0 0 2.253h1zm0 13H0a1 1 0 0 0 1.553.833L1 15.253zm8.447.833a1 1 0 1 0 1.107-1.666l-1.107 1.666zm0-14.666a1 1 0 1 0 1.107 1.666L9.447 1.42zM19 2.253h1a1 1 0 0 0-.447-.833L19 2.253zm0 13l-.553.833A1 1 0 0 0 20 15.253h-1zm-9.553-.833a1 1 0 1 0 1.107 1.666L9.447 14.42zM9 2.253v13h2v-13H9zm1.553-.833C9.203.523 7.42 0 5.5 0v2c1.572 0 2.961.431 3.947 1.086l1.107-1.666zM5.5 0C3.58 0 1.797.523.447 1.42l1.107 1.666C2.539 2.431 3.928 2 5.5 2V0zM0 2.253v13h2v-13H0zm1.553 13.833C2.539 15.431 3.928 15 5.5 15v-2c-1.92 0-3.703.523-5.053 1.42l1.107 1.666zM5.5 15c1.572 0 2.961.431 3.947 1.086l1.107-1.666C9.203 13.523 7.42 13 5.5 13v2zm5.053-11.914C11.539 2.431 12.928 2 14.5 2V0c-1.92 0-3.703.523-5.053 1.42l1.107 1.666zM14.5 2c1.573 0 2.961.431 3.947 1.086l1.107-1.666C18.203.523 16.421 0 14.5 0v2zm3.5.253v13h2v-13h-2zm1.553 12.167C18.203 13.523 16.421 13 14.5 13v2c1.573 0 2.961.431 3.947 1.086l1.107-1.666zM14.5 13c-1.92 0-3.703.523-5.053 1.42l1.107 1.666C11.539 15.431 12.928 15 14.5 15v-2z\"\n    />\n  </svg>\n</template>\n"
+                    }
+                  },
+                  "IconEcosystem.vue": {
+                    "file": {
+                      "contents": "<template>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"20\" fill=\"currentColor\">\n    <path\n      d=\"M11.447 8.894a1 1 0 1 0-.894-1.789l.894 1.789zm-2.894-.789a1 1 0 1 0 .894 1.789l-.894-1.789zm0 1.789a1 1 0 1 0 .894-1.789l-.894 1.789zM7.447 7.106a1 1 0 1 0-.894 1.789l.894-1.789zM10 9a1 1 0 1 0-2 0h2zm-2 2.5a1 1 0 1 0 2 0H8zm9.447-5.606a1 1 0 1 0-.894-1.789l.894 1.789zm-2.894-.789a1 1 0 1 0 .894 1.789l-.894-1.789zm2 .789a1 1 0 1 0 .894-1.789l-.894 1.789zm-1.106-2.789a1 1 0 1 0-.894 1.789l.894-1.789zM18 5a1 1 0 1 0-2 0h2zm-2 2.5a1 1 0 1 0 2 0h-2zm-5.447-4.606a1 1 0 1 0 .894-1.789l-.894 1.789zM9 1l.447-.894a1 1 0 0 0-.894 0L9 1zm-2.447.106a1 1 0 1 0 .894 1.789l-.894-1.789zm-6 3a1 1 0 1 0 .894 1.789L.553 4.106zm2.894.789a1 1 0 1 0-.894-1.789l.894 1.789zm-2-.789a1 1 0 1 0-.894 1.789l.894-1.789zm1.106 2.789a1 1 0 1 0 .894-1.789l-.894 1.789zM2 5a1 1 0 1 0-2 0h2zM0 7.5a1 1 0 1 0 2 0H0zm8.553 12.394a1 1 0 1 0 .894-1.789l-.894 1.789zm-1.106-2.789a1 1 0 1 0-.894 1.789l.894-1.789zm1.106 1a1 1 0 1 0 .894 1.789l-.894-1.789zm2.894.789a1 1 0 1 0-.894-1.789l.894 1.789zM8 19a1 1 0 1 0 2 0H8zm2-2.5a1 1 0 1 0-2 0h2zm-7.447.394a1 1 0 1 0 .894-1.789l-.894 1.789zM1 15H0a1 1 0 0 0 .553.894L1 15zm1-2.5a1 1 0 1 0-2 0h2zm12.553 2.606a1 1 0 1 0 .894 1.789l-.894-1.789zM17 15l.447.894A1 1 0 0 0 18 15h-1zm1-2.5a1 1 0 1 0-2 0h2zm-7.447-5.394l-2 1 .894 1.789 2-1-.894-1.789zm-1.106 1l-2-1-.894 1.789 2 1 .894-1.789zM8 9v2.5h2V9H8zm8.553-4.894l-2 1 .894 1.789 2-1-.894-1.789zm.894 0l-2-1-.894 1.789 2 1 .894-1.789zM16 5v2.5h2V5h-2zm-4.553-3.894l-2-1-.894 1.789 2 1 .894-1.789zm-2.894-1l-2 1 .894 1.789 2-1L8.553.106zM1.447 5.894l2-1-.894-1.789-2 1 .894 1.789zm-.894 0l2 1 .894-1.789-2-1-.894 1.789zM0 5v2.5h2V5H0zm9.447 13.106l-2-1-.894 1.789 2 1 .894-1.789zm0 1.789l2-1-.894-1.789-2 1 .894 1.789zM10 19v-2.5H8V19h2zm-6.553-3.894l-2-1-.894 1.789 2 1 .894-1.789zM2 15v-2.5H0V15h2zm13.447 1.894l2-1-.894-1.789-2 1 .894 1.789zM18 15v-2.5h-2V15h2z\"\n    />\n  </svg>\n</template>\n"
+                    }
+                  },
+                  "IconSupport.vue": {
+                    "file": {
+                      "contents": "<template>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" fill=\"currentColor\">\n    <path\n      d=\"M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.666.105 5.5 5.5 0 0 0-.114 7.665L10 18.78l8.39-8.4a5.5 5.5 0 0 0-.114-7.665 5.5 5.5 0 0 0-7.666-.105l-.61.61z\"\n    />\n  </svg>\n</template>\n"
+                    }
+                  },
+                  "IconTooling.vue": {
+                    "file": {
+                      "contents": "<!-- This icon is from <https://github.com/Templarian/MaterialDesign>, distributed under Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0) license-->\n<template>\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n    aria-hidden=\"true\"\n    role=\"img\"\n    class=\"iconify iconify--mdi\"\n    width=\"24\"\n    height=\"24\"\n    preserveAspectRatio=\"xMidYMid meet\"\n    viewBox=\"0 0 24 24\"\n  >\n    <path\n      d=\"M20 18v-4h-3v1h-2v-1H9v1H7v-1H4v4h16M6.33 8l-1.74 4H7v-1h2v1h6v-1h2v1h2.41l-1.74-4H6.33M9 5v1h6V5H9m12.84 7.61c.1.22.16.48.16.8V18c0 .53-.21 1-.6 1.41c-.4.4-.85.59-1.4.59H4c-.55 0-1-.19-1.4-.59C2.21 19 2 18.53 2 18v-4.59c0-.32.06-.58.16-.8L4.5 7.22C4.84 6.41 5.45 6 6.33 6H7V5c0-.55.18-1 .57-1.41C7.96 3.2 8.44 3 9 3h6c.56 0 1.04.2 1.43.59c.39.41.57.86.57 1.41v1h.67c.88 0 1.49.41 1.83 1.22l2.34 5.39z\"\n      fill=\"currentColor\"\n    ></path>\n  </svg>\n</template>\n"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "main.ts": {
+            "file": {
+              "contents": "import './assets/main.css'\n\nimport { createApp } from 'vue'\nimport { createPinia } from 'pinia'\n\nimport App from './App.vue'\nimport router from './router'\n\nconst app = createApp(App)\n\napp.use(createPinia())\napp.use(router)\n\napp.mount('#app')\n"
+            }
+          },
+          "router": {
+            "directory": {
+              "index.ts": {
+                "file": {
+                  "contents": "import { createRouter, createWebHistory } from 'vue-router'\nimport HomeView from '../views/HomeView.vue'\n\nconst router = createRouter({\n  history: createWebHistory(import.meta.env.BASE_URL),\n  routes: [\n    {\n      path: '/',\n      name: 'home',\n      component: HomeView\n    },\n    {\n      path: '/about',\n      name: 'about',\n      // route level code-splitting\n      // this generates a separate chunk (About.[hash].js) for this route\n      // which is lazy-loaded when the route is visited.\n      component: () => import('../views/AboutView.vue')\n    }\n  ]\n})\n\nexport default router\n"
+                }
+              }
+            }
+          },
+          "stores": {
+            "directory": {
+              "counter.ts": {
+                "file": {
+                  "contents": "import { ref, computed } from 'vue'\nimport { defineStore } from 'pinia'\n\nexport const useCounterStore = defineStore('counter', () => {\n  const count = ref(0)\n  const doubleCount = computed(() => count.value * 2)\n  function increment() {\n    count.value++\n  }\n\n  return { count, doubleCount, increment }\n})\n"
+                }
+              }
+            }
+          },
+          "views": {
+            "directory": {
+              "AboutView.vue": {
+                "file": {
+                  "contents": "<template>\n  <div class=\"about\">\n    <h1>This is an about page</h1>\n  </div>\n</template>\n\n<style>\n@media (min-width: 1024px) {\n  .about {\n    min-height: 100vh;\n    display: flex;\n    align-items: center;\n  }\n}\n</style>\n"
+                }
+              },
+              "HomeView.vue": {
+                "file": {
+                  "contents": "<script setup lang=\"ts\">\nimport TheWelcome from '../components/TheWelcome.vue'\n</script>\n\n<template>\n  <main>\n    <TheWelcome />\n  </main>\n</template>\n"
+                }
+              }
+            }
+          }
+        }
+      },
+      "tsconfig.app.json": {
+        "file": {
+          "contents": "{\n  \"extends\": \"@vue/tsconfig/tsconfig.dom.json\",\n  \"include\": [\"env.d.ts\", \"src/**/*\", \"src/**/*.vue\"],\n  \"exclude\": [\"src/**/__tests__/*\"],\n  \"compilerOptions\": {\n    \"composite\": true,\n    \"tsBuildInfoFile\": \"./node_modules/.tmp/tsconfig.app.tsbuildinfo\",\n\n    \"baseUrl\": \".\",\n    \"paths\": {\n      \"@/*\": [\"./src/*\"]\n    }\n  }\n}\n"
+        }
+      },
+      "tsconfig.json": {
+        "file": {
+          "contents": "{\n  \"files\": [],\n  \"references\": [\n    {\n      \"path\": \"./tsconfig.node.json\"\n    },\n    {\n      \"path\": \"./tsconfig.app.json\"\n    },\n    {\n      \"path\": \"./tsconfig.vitest.json\"\n    }\n  ]\n}\n"
+        }
+      },
+      "tsconfig.node.json": {
+        "file": {
+          "contents": "{\n  \"extends\": \"@tsconfig/node20/tsconfig.json\",\n  \"include\": [\n    \"vite.config.*\",\n    \"vitest.config.*\",\n    \"cypress.config.*\",\n    \"nightwatch.conf.*\",\n    \"playwright.config.*\"\n  ],\n  \"compilerOptions\": {\n    \"composite\": true,\n    \"noEmit\": true,\n    \"tsBuildInfoFile\": \"./node_modules/.tmp/tsconfig.node.tsbuildinfo\",\n\n    \"module\": \"ESNext\",\n    \"moduleResolution\": \"Bundler\",\n    \"types\": [\"node\"]\n  }\n}\n"
+        }
+      },
+      "tsconfig.vitest.json": {
+        "file": {
+          "contents": "{\n  \"extends\": \"./tsconfig.app.json\",\n  \"exclude\": [],\n  \"compilerOptions\": {\n    \"composite\": true,\n    \"tsBuildInfoFile\": \"./node_modules/.tmp/tsconfig.vitest.tsbuildinfo\",\n\n    \"lib\": [],\n    \"types\": [\"node\", \"jsdom\"]\n  }\n}\n"
+        }
+      },
+      "vite.config.ts": {
+        "file": {
+          "contents": "import { fileURLToPath, URL } from 'node:url'\n\nimport { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\nimport vueJsx from '@vitejs/plugin-vue-jsx'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [\n    vue(),\n    vueJsx(),\n  ],\n  resolve: {\n    alias: {\n      '@': fileURLToPath(new URL('./src', import.meta.url))\n    }\n  }\n})\n"
+        }
+      },
+      "vitest.config.ts": {
+        "file": {
+          "contents": "import { fileURLToPath } from 'node:url'\nimport { mergeConfig, defineConfig, configDefaults } from 'vitest/config'\nimport viteConfig from './vite.config'\n\nexport default mergeConfig(\n  viteConfig,\n  defineConfig({\n    test: {\n      environment: 'jsdom',\n      exclude: [...configDefaults.exclude, 'e2e/**'],\n      root: fileURLToPath(new URL('./', import.meta.url))\n    }\n  })\n)\n"
         }
       }
     }
